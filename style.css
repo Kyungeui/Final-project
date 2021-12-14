@@ -1,5 +1,29 @@
 @charset "utf-8";
-
 html {
     background: black;
 }
+
+
+/* 왼쪽 고정 nav */
+.fixed-left {
+    width: 20%;
+    
+}
+
+
+
+
+
+
+/* 중간 content */
+.content-inner {
+    background-color: rgba(48, 47, 47, 0.418);
+}
+
+
+
+
+
+
+
+/* 오른쪽 고정  */
