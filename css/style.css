@@ -1,29 +1,16 @@
 @charset "utf-8";
-html {
-    background: black;
-}
 
-
-/* 왼쪽 고정 nav */
-.fixed-left {
-    width: 20%;
+body {
     
 }
-
-
-
-
-
-
-/* 중간 content */
-.content-inner {
-    background-color: rgba(48, 47, 47, 0.418);
+.navbar-fixed-top{
+    position: fixed;
 }
-
-
-
-
-
-
-
-/* 오른쪽 고정  */
+.sidebar{
+ 
+    position: fixed;
+    height: 100%;
+}
+.main_content {
+    padding-top: 50px;
+}

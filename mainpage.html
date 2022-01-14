@@ -1,61 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap 추가 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
     <!-- style.css & reset.css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <!-- 파비콘  -->
-    <link rel="icon" href="img/SpotifyIcon_Black.png">
+    <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
     <title>Spotify</title>
-
-</head>
-<body>
-    <!-- 왼쪽 고정 nav -->
-    <div class="fixed-left">
-        <div class="fixed-left-inner">
-            <div class="nav-btns">
-
-            </div>
-            <div class="list-btns">
-
-            </div>
+  </head>
+  <body>
+    <!-- 메뉴바의 색상 테마 지정 -->
+    <div class="navbar navbar-fixed-top">
+      <!-- 메뉴의 영역 -->
+      <div class="container-fluid">
+        <!-- 로고 -->
+        <div class="navbar-header">
+          <!-- 모바일 해상도에서만 표시되는 햄버거 버튼 -->
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+
+        <!-- 상단 고정 메뉴바 -->
+        <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">PREMIUM</a></li>
+            <li><a href="#">NAME</a></li>
+          </ul>
+          <button><img src="icon/left.png" alt="" /></button>
+          <button><img src="icon/right.png" alt="" /></button>
+        </div>
+      </div>
     </div>
 
-    <!-- 중간 content -->
-    <div class="content-middle">
-        <!-- 상단 고정 bar -->
-        <div class="fixed-top">
-
+    <!--왼쪽 고정 메뉴바 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 sidebar text-primary">
+          <ul class="nav nav-sidebar sidenav">
+            <li style="padding-top: 5px">
+              <img
+                src="icon/SpotifyIcon_Green.png"
+                style="width: 25px; margin: 10px"
+                alt=""
+              />SPOTIFY
+            </li>
+            <li><a href="#">🏠 홈</a></li>
+            <li><a href="#">🔍 검색하기</a></li>
+          </ul>
+          <hr />
+          <ul class="nav nav-sidebar sidenav">
+            <li><a href="#">🧺 플레이리스트</a></li>
+          </ul>
+          <hr />
+          <ul class="nav nav-sidebar sidenav">
+            <li><a href="#">🔑 로그인/로그아웃</a></li>
+            <li><a href="#">🎁 회원가입</a></li>
+            <li><a href="#">👤 계정</a></li>
+          </ul>
         </div>
-        <!-- 중간 content 안에  -->
-        <div class="content-inner">
-            <!-- 메인 이미지 -->
-            <div class="main-img">
-                <div class="mian-img-inner">
-                    <img src="img/dojacat.jpeg" alt="main-img">
-                </div>
-            </div>
-            <!-- 인기 차트 -->
+      </div>
 
-
-            <!-- 인기 아티스트 -->
-            <div class="popular-artist">
-                <div class="artist-list">
-                    ...
-                </div>
-            </div>
-
+      <!-- 메인페이지 content -->
+      <div class="main_content col-md-10 col-md-offset-2">
+        <!-- 배너 이미지 -->
+        <div>
+          <div>
+            <img src="img/christmas_main.png" style="width: 100%" alt="" />
+          </div>
         </div>
+
+        <!-- 인기차트 -->
+        <h2 class="page-header">인기차트</h2>
+        <!--테이블넣기-->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>제목</th>
+              <th>앨범</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>You Right</td>
+              <td>STAY</td>
+              <td><button>추가</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 인기 아티스트 -->
+        <h1 class="page-header">인기 아티스트</h1>
+        <!--프로필-->
+        <div class="row placeholders">
+          <div class="col-md-3 placeholder">
+            <img
+              src="img/dhruv.jpeg"
+              class="img-responsive"
+              alt="harry placeholder thumbnail"
+            />
+            <h4>dhruv</h4>
+            <span class="text-muted">아티스트</span>
+          </div>
+
+          <div class="col-md-3 placeholder">
+            <img
+              src="img/sza.jpeg"
+              class="img-responsive"
+              alt="dobby placeholder thumbnail"
+            />
+            <h4>SZA</h4>
+            <span class="text-muted">아티스트</span>
+          </div>
+
+          <div class="col-md-3 placeholder">
+            <img
+              src="img/cl_profile.png"
+              class="img-responsive"
+              alt="harry placeholder thumbnail"
+            />
+            <h4>CL</h4>
+            <span class="text-muted">아티스트</span>
+          </div>
+
+          <div class="col-md-3 placeholder">
+            <img
+              src="img/Jenevieve.jpeg"
+              class="img-responsive"
+              alt="dobby placeholder thumbnail"
+            />
+            <h4>Jenevieve</h4>
+            <span class="text-muted">아티스트</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
