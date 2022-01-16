@@ -17,79 +17,70 @@
 
 </head>
 <body>
-    <!-- 왼쪽 고정 nav -->
-    <div class="fixed-left">
-        <div class="fixed-left-inner">
-            <div class="nav-btns">
-
-            </div>
-            <div class="list-btns">
-
-            </div>
+    <!-- 메뉴바의 색상 테마 지정 -->
+    <div class="navbar navbar-fixed-top">
+        <!-- 메뉴의 영역 -->
+        <div class="container-fluid">
+          <!-- 로고 -->
+          <div class="navbar-header">
+            <!-- 모바일 해상도에서만 표시되는 햄버거 버튼 -->
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+  
+          <!-- 상단 고정 메뉴바 -->
+          <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">PREMIUM</a></li>
+              <li><a href="#">NAME</a></li>
+            </ul>
+            <button><img src="icon/left.png" alt="" /></button>
+            <button><img src="icon/right.png" alt="" /></button>
+          </div>
         </div>
-    </div>
-
-    <!-- 중간 content -->
-    <div class="content-middle">
-        <!-- 상단 고정 bar -->
-        <div class="fixed-top">
-
-        </div>
-        <!-- 중간 content 안에  -->
-        <div class="content-inner">
-            <!-- 메인 이미지 -->
-            <div class="main-img">
-                <div class="mian-img-inner">
-                    <img src="img/dojacat.jpeg" alt="main-img">
-                </div>
-            </div>
-
-            <!-- 인기 아티스트 -->
-            <div class="popular-artist">
-                <div class="artist-list">
-                    ...
-                </div>
-            </div>
-
-            <!-- 인기 음악 -->
-            <div class="popular-music">
-                <div class="music-list">
-                    ...
-                </div>
-            </div>
-
-            <!-- 인기 앨범 -->
-            <div class="popular-album">
-                <div class="album-list">
-                    ...
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 오른쪽 친구 & 설정 고정 -->
-    <div class="friend-right">
-        <!-- 상단 친구 활동 & 이모티콘 -->
-        <div class="activity">
-
-        </div>
-        
-        <!-- 설명 & 친구 프로필 -->
-        <div class="friend-profile">
-            
+      </div>
+  
+      <!--왼쪽 고정 메뉴바 -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 sidebar text-primary">
+            <ul class="nav nav-sidebar sidenav">
+              <li style="padding-top: 5px">
+                <img
+                  src="icon/SpotifyIcon_Green.png"
+                  style="width: 25px; margin: 10px"
+                  alt=""
+                />SPOTIFY
+              </li>
+              <li><a href="#">🏠 홈</a></li>
+              <li><a href="#">🔍 검색하기</a></li>
+            </ul>
+            <hr />
+            <ul class="nav nav-sidebar sidenav">
+              <li><a href="#">🧺 플레이리스트</a></li>
+            </ul>
+            <hr />
+            <ul class="nav nav-sidebar sidenav">
+              <li><a href="#">🔑 로그인/로그아웃</a></li>
+              <li><a href="#">🎁 회원가입</a></li>
+              <li><a href="#">👤 계정</a></li>
+            </ul>
+          </div>
         </div>
 
-        <!-- 설명 & 설정 버튼  -->
-        <div class="setting-btn">
 
-        </div>
-    </div>
-
-    <!-- 하단 고정 뮤직플레이 -->
-    <div class="musicplay">
-
-    </div>
+      <!-- 메인페이지 content -->
+      <div class="main_content col-md-10 col-md-offset-2">
+        <!-- 배너 이미지 -->
+      </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
