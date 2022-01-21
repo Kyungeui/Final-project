@@ -15,7 +15,7 @@
     />
     <!-- style.css & reset.css -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <!-- 파비콘  -->
     <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
@@ -89,39 +89,60 @@
 
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
-        <!-- 플레이리스트 목록 -->
-        <h2 class="page-header">플레이리스트 목록</h2>
-        <!-- 플레이리스트 만들기 -->
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            플레이리스트 만들기
-        </button>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">플레이리스트 만들기</h4>
-                </div>
-                <div class="modal-body">
-                    <input type="text" class="form-control" placeholder="플레이 리스트 제목 입력" aria-describedby="basic-addon2">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
-                    <button type="button" class="btn btn-primary">만들기</button>
-                </div>
-            </div>
+        <!-- 본문1 -->
+        <div class="page-header">
+          <!-- 텍스트 -->
+          <div class="page-text">
+            <h2>다양한 해외 히트곡과</h2>
+            <h2>국내 인기 음악을 들어보세요</h2>
+            <h3>매월 최소 10,900원입니다(부가세별도).</h3>
+            <h3>언제든 해지할 수 있습니다.</h3>
           </div>
+
+          <!-- 요금제 이동 버튼 -->
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">요금제 보기</a></p>
         </div>
 
-        <!-- 생성된 플레이리스트 버튼 -->
-        <p>
-          <button type="button" class="btn btn-primary btn-lg">플레이 리스트1</button>
-          <button type="button" class="btn btn-primary btn-lg">플레이 리스트2</button>
-          <button type="button" class="btn btn-primary btn-lg">플레이 리스트3</button>
-        </p>
+        <!-- 본문2 -->
+        <div>
+          <div class="title-text">
+            <h2>요금제 선택하기</h2>
+            <p>고객님에게 알맞은 요금제가 있습니다.</p>
+          </div>
+          <div class="charge">
+            <div class="sub-text">
+              <h3>개인</h3>
+              <p>매월 10,900원 결제(부가세 별도)</p>
+              <p>계정1개</p>
+            </div>
+            <hr/>
+            <!-- 계정 내용 소개 -->
+            <ul>
+              <li>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <p>광고 없는 음악 감상</p>
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <p>다운로드하여 오프라인에서 감상</p>
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <p>나만의 맞춤 플레이리스트</p>
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <p>7천만 개에 달하는 곡을 즐겨보세요</p>
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <p>여러 기기에서 감상</p>
+              </li>
+            </ul>
+            <!-- 버튼 -->
+            <a class="btn btn-default" href="#" role="button">시작하기</a>
+          </div>
+        </div>
     </div>
 
 
