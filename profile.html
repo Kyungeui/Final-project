@@ -83,88 +83,71 @@
     </div>
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
-      <img src="icon/SpotifyIcon_Black.png" alt="" style="width: 40px" />Spotify
-      <h2>무료 Spotify 계정에 가입하세요</h2>
-      <div class="login_content">
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-envelope"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_name"
-            name="user_name"
-            placeholder="이메일"
-          />
+        <h1>프로필</h1>
+        <span><a href="profile_edit.html">프로필편집</a></span>
+        <div class="form-group">
+            <!-- 이름 -->
+            <label for="pro_name" class="col-sm-2 control-label">사용자 이름</label>
+            <div class="col-sm-10">
+                <input type="text" name="pro_name" id="pro_name" class="form-control" value="" />
+            </div>
         </div>
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-lock"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_name"
-            name="user_name"
-            placeholder="비밀번호 만들기"
-          />
+        <!-- 이메일 -->
+        <div class="form-group">
+            <!-- .constrol-tabel은 label태그에 들어가는 속성이다. -->
+            <label for="pro_email" class="col-sm-2 control-label">이메일</label>
+            <div class="col-sm-10">
+                <input type="email" name="pro_email" id="pro_email" class="form-control" value="" />
+            </div>
         </div>
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-user"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_name"
-            name="user_name"
-            placeholder="사용자 이름"
-          />
+
+        <!-- 비밀번호 -->
+        <div class="form-group">
+            <!-- .constrol-tabel은 label태그에 들어가는 속성이다. -->
+            <label for="pro-pw" class="col-sm-2 control-label">비밀번호</label>
+            <div class="col-sm-10">
+                <input type="password" name="pro-pw" id="pro-pw" class="form-control" value=""/>
+            </div>
         </div>
 
         <!-- 생년월일 -->
         <div class="form-group">
-          <label for="user_birth">생년월일이 언제인가요?</label>
-          <input
-            type="date"
-            class="form-control"
-            id="user_birth"
-            name="user_birth"
-          />
+            <!-- .constrol-tabel은 label태그에 들어가는 속성이다. -->
+            <label for="pro_birth" class="col-sm-2 control-label">생년월일</label>
+            <div class="col-sm-10">
+                <input type="date" name="pro_birth" id="pro_birth" class="form-control" value=""/>
+            </div>
         </div>
 
-        <!-- 성별 라디오 -->
+        <!-- 성별 -->
         <div class="form-group">
-          <label for="user_birth">성별이 무엇인가요?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="myradio" id="female" value="" checked />
-              여성
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="myradio" id="male" value="" />
-              남성
-            </label>
-          </div>
-          <!-- 사용 못하게 막으려면 .disabled -->
-          <div class="radio">
-            <label>
-              <!-- 사용 못하게 막으려면 .disabled -->
-              <input type="radio" name="myradio" id="non" value="" />
-              논바이너리
-            </label>
-          </div>
+            <label for="pro-gender" class="col-sm-2 control-label">성별</label>
+            <div class="col-sm-10 form-inline">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="myradio" id="female" value="" checked />
+                        여성
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="myradio" id="male" value="" />
+                        남성
+                    </label>
+                </div>
+                <!-- 사용 못하게 막으려면 .disabled -->
+                <div class="radio">
+                    <label>
+                        <!-- 사용 못하게 막으려면 .disabled -->
+                        <input type="radio" name="myradio" id="non" value="">
+                        논바이너리
+                    </label>
+                </div>
+              </div>
+            </div>
         </div>
-        <button type="submit" class="btn btn-success btn-block">
-          SPOTIFY에 가입하기
-        </button>
-        <a href="#">뒤로</a>
-        <div class="log_join">
-          <span
-            >이미 Spotify 계정이 있다고요?<a href="login.html"
-              >로그인하기</a
-            ></span
-          >
-        </div>
-      </div>
     </div>
+      
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>

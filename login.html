@@ -40,12 +40,12 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
+      
         <!-- 상단 고정 메뉴바 -->
         <div class="nav-bar-collapse col-md-10 col-md-offset-2">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">PREMIUM</a></li>
-            <li><a href="#">NAME</a></li>
+            <li><a href="profile.html">NAME</a></li>
           </ul>
           <button><img src="icon/left.png" alt="" /></button>
           <button><img src="icon/right.png" alt="" /></button>
@@ -65,7 +65,7 @@
                 alt=""
               />SPOTIFY
             </li>
-            <li><a href="#">🏠 홈</a></li>
+            <li><a href="mainpage.html">🏠 홈</a></li>
             <li><a href="#">🔍 검색하기</a></li>
           </ul>
           <hr />
@@ -74,20 +74,44 @@
           </ul>
           <hr />
           <ul class="nav nav-sidebar sidenav">
-            <li><a href="#">🔑 로그인/로그아웃</a></li>
-            <li><a href="#">🎁 회원가입</a></li>
-            <li><a href="#">👤 계정</a></li>
+            <li><a href="login.html">🔑 로그인/로그아웃</a></li>
+            <li><a href="signup.html">🎁 회원가입</a></li>
+            <li><a href="profile.html">👤 계정</a></li>
           </ul>
         </div>
       </div>
-
-      <!-- 메인페이지 content -->
-      <div class="main_content col-md-10 col-md-offset-2">
-        
-       
+    </div>
+    <!-- 메인페이지 content -->
+    <div class="main_content col-md-10 col-md-offset-2">
+        <img src="icon/SpotifyIcon_Black.png" alt="" style="width: 40px">Spotify
+        <h2>계속하려면 로그인 하세요.</h2>
+        <div class="login_content">
+          <div class="input-group">
+            <div class="input-group-addon glyphicon glyphicon-user"></div>
+            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="이메일 또는 사용자 이름">
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon glyphicon glyphicon-lock"></div>
+            <input type="password" class="form-control" id="user_pw" name="user_pw" placeholder="비밀번호">
+          </div>
+          <button type="submit" class="btn btn-default btn-block">로그인하기</button>
+        </div>
+        <!-- 가입하기 -->
+        <div class="log_join">
+          <span>계정이 없나요?<a href="signup.html">가입하기</a></span>
+        </div>
       </div>
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
