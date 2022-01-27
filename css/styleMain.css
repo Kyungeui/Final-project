@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    
+    background-color: gray;
 }
 .navbar-fixed-top{
     position: fixed;
@@ -13,4 +13,9 @@ body {
 }
 .main_content {
     padding-top: 50px;
+}
+
+/** 왼쪽 고정 **/
+.container-fluid {
+    
 }
