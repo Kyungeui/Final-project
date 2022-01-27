@@ -41,13 +41,13 @@
         </div>
 
         <!-- 상단 고정 메뉴바 -->
-        <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+        <div class="nav-bar-collapse col-md-10 col-md-offset-2 ">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="premium.html">PREMIUM</a></li>
-            <li><a href="profile.html">NAME</a></li>
+            <li><a href="premium.html" class="premium">PREMIUM</a></li>
+            <li><a href="profile.html" class="name">💚NAME</a></li>
           </ul>
-          <button><img src="icon/left.png" alt="" /></button>
-          <button><img src="icon/right.png" alt="" /></button>
+          <button class="prevbtn"><img src="icon/left.png" alt="" /></button>
+          <button class="nextbtn"><img src="icon/right.png" alt="" /></button>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
     <!--왼쪽 고정 메뉴바 -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 sidebar text-primary">
+        <div class="col-md-2 sidebar text-primary ">
           <ul class="nav nav-sidebar sidenav">
             <li style="padding-top: 5px">
               <img
@@ -90,17 +90,17 @@
       </div>
 
       <!-- 인기차트 -->
-      <h2 class="page-header">인기차트</h2>
+      <h2>인기차트</h2>
       <!--테이블넣기-->
-      <table class="table">
+      <table class="table table-borderless">
         <thead>
-          <tr>
+          <tr class="borderline">
             <th>#</th>
             <th>제목</th>
             <th>앨범</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="tablebody">
           <tr>
             <td>1</td>
             <td>You Right</td>
@@ -110,7 +110,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -162,7 +162,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -214,7 +214,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -266,7 +266,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -318,7 +318,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -370,7 +370,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -422,7 +422,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -474,7 +474,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -526,7 +526,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -578,7 +578,7 @@
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn btn-default btn-sm"
+                class="btn btn-success btn-sm"
                 data-toggle="modal"
                 data-target="#myModal"
               >
@@ -625,7 +625,7 @@
       </table>
 
       <!-- 인기 아티스트 -->
-      <h1 class="page-header">인기 아티스트</h1>
+      <h2>인기 아티스트</h2>
       <!--프로필-->
       <div class="row placeholders">
         <a href="main_artist.html">
