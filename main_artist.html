@@ -14,8 +14,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
     />
     <!-- style.css & reset.css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/styleMain.css" />
     <!-- 파비콘  -->
     <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
@@ -44,11 +43,11 @@
         <!-- 상단 고정 메뉴바 -->
         <div class="nav-bar-collapse col-md-10 col-md-offset-2">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="premium.html">PREMIUM</a></li>
-            <li><a href="profile.html">NAME</a></li>
+            <li><a href="premium.html" class="premium">PREMIUM</a></li>
+            <li><a href="profile.html" class="name">💚NAME</a></li>
           </ul>
-          <button><img src="icon/left.png" alt="" /></button>
-          <button><img src="icon/right.png" alt="" /></button>
+          <button class="prevbtn"><img src="icon/left.png" alt="" /></button>
+          <button class="nextbtn"><img src="icon/right.png" alt="" /></button>
         </div>
       </div>
     </div>
@@ -92,7 +91,7 @@
 
       <!-- 인기차트 -->
       <h2 class="">Doja Cat</h2>
-      <button><img src="icon/play-button.png" alt=""></button>
+      <button><img src="icon/play-button.png" alt="" /></button>
       <!--테이블넣기-->
       <table class="table">
         <thead>
@@ -110,22 +109,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -138,22 +161,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -166,22 +213,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -194,22 +265,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -222,22 +317,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,22 +369,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -278,22 +421,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -306,22 +473,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -334,22 +525,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -362,22 +577,46 @@
             <td>
               <!-- 플레이리스트에 추가 -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+              <button
+                type="button"
+                class="btn btn-default btn-sm"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 추가
               </button>
-            
+
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div
+                class="modal fade"
+                id="myModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+              >
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">플레이리스트에 추가</h4>
-                      </div>
-                      <div class="modal-body">
-                        <button type="button" class="btn btn-primary">플레이리스트1</button>
-                        <button type="button" class="btn btn-primary">플레이리스트2</button>
-                      </div>
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                        플레이리스트에 추가
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트1
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        플레이리스트2
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
