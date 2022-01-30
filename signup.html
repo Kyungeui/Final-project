@@ -13,7 +13,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
   />
   <!-- style.css & reset.css -->
-  <link rel="stylesheet" href="css/styleMain.css" />
+  <link rel="stylesheet" href="css/signin.css" />
   <!-- 파비콘  -->
   <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
@@ -79,11 +79,14 @@
       </div>
     </div>
   </div>
+  
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
-      <img src="icon/SpotifyIcon_Black.png" alt="" style="width: 40px" />Spotify
-      <h2>무료 Spotify 계정에 가입하세요</h2>
-      <div class="login_content">
+      <div class="sign_content">
+        <div class="titlezone">
+          <img src="icon/SpotifyIcon_White.png" alt="" style="width: 40px" />Spotify
+          <h2 class="signtitle">무료 Spotify 계정에 가입하세요</h2>
+        </div>
         <div class="input-group">
           <div class="input-group-addon glyphicon glyphicon-envelope"></div>
           <input
@@ -153,10 +156,12 @@
         <button type="submit" class="btn btn-success btn-block">
           SPOTIFY에 가입하기
         </button>
-        <a href="#">뒤로</a>
-        <div class="log_join">
+        <div class="back">
+          <a href="#" class="backback">뒤로</a>
+        </div>
+        <div class="sign_join">
           <span
-            >이미 Spotify 계정이 있다고요?<a href="login.html"
+            >이미 Spotify 계정이 있다고요?<a href="login.html" class="login"
               >로그인하기</a
             ></span
           >

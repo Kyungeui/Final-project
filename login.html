@@ -13,7 +13,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
   />
   <!-- style.css & reset.css -->
-  <link rel="stylesheet" href="css/styleMain.css" />
+  <link rel="stylesheet" href="css/login.css" />
   <!-- 파비콘  -->
   <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
@@ -81,9 +81,10 @@
   </div>
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
-        <img src="icon/SpotifyIcon_Black.png" alt="" style="width: 40px">Spotify
-        <h2>계속하려면 로그인 하세요.</h2>
-        <div class="login_content">
+       <div class="login_content">
+        <img src="icon/SpotifyIcon_White.png" alt="" style="width: 40px">Spotify
+        <h2 class="logtitle">계속하려면 로그인 하세요.</h2>
+        <div class="login_con">
           <div class="input-group">
             <div class="input-group-addon glyphicon glyphicon-user"></div>
             <input type="text" class="form-control" id="user_name" name="user_name" placeholder="이메일 또는 사용자 이름">
@@ -92,13 +93,13 @@
             <div class="input-group-addon glyphicon glyphicon-lock"></div>
             <input type="password" class="form-control" id="user_pw" name="user_pw" placeholder="비밀번호">
           </div>
-          <button type="submit" class="btn btn-default btn-block">로그인하기</button>
+          <button type="submit" class="btn btn-block">로그인하기</button>
         </div>
         <!-- 가입하기 -->
         <div class="log_join">
-          <span>계정이 없나요?<a href="signup.html">가입하기</a></span>
+          <span>계정이 없나요?<a href="signup.html" class="signin">가입하기</a></span>
         </div>
-      </div>
+       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

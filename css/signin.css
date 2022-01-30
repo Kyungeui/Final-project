@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+body, html {
+    background-color: rgb(37, 37, 37);
+}
+
+/** 공통으로 주는 태그 **/
+h2, a, ul {
+    color: white;
+    text-decoration: none;
+}
+
+/*** 상단고정 ***/
+/* 고정시키기 */
+.navbar-fixed-top{
+    position: fixed;
+    padding: 5px 30px;
+}
+/* 왼 */
+.prevbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+/* 오 */
+.nextbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+}
+/* 프리미엄&이름 공통적용 */
+.navbar-nav>li {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.navbar-nav>li>a {
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* 프리미엄 */
+.premium{
+    background-color: rgb(211, 42, 0);
+}
+.premium:hover {
+    color: rgb(211, 42, 0);
+}
+/* 내정보 이름 */
+.name {
+    background-color: black;
+}
+.name:hover {
+    color: black;
+}
+
+/*** 왼쪽 고정 메뉴 ***/
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    padding-top: 5px;
+}
+.sidenav li a:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 10px;
+}
+hr {
+    border-top: 1px solid rgb(37, 37, 37);
+}
+
+
+
+
+/*** 메인 content ***/
+.main_content {
+    padding-top: 150px;
+}
+.sign_content {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    width: 400px;
+    margin: auto;
+}
+.sign_content img {
+    padding-bottom: 5px;
+    margin: 5px;
+
+}
+
+/* 가입 타이틀  */
+.titlezone {
+    text-align: center;
+}
+.signtitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 가입 폼 */
+.input-group {
+    padding-bottom: 10px;
+}
+.glyphicon {
+    top: 0;
+}
+.form-control {
+    height: 50px;
+}
+
+/* 폼제목 */ 
+label {
+    font-size: 20px;
+    color: gray;
+}
+
+/* 가입 버튼 */
+btn {
+    margin-top: 30px;
+    height: 40px;
+}
+.back {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+/* 게정이 있다고요? */ 
+.sign_join {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: gray;
+}
+
+.login {
+    padding-left: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}

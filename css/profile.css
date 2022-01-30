@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+body, html {
+    background-color: rgb(37, 37, 37);
+}
+
+/** 공통으로 주는 태그 **/
+h2, a, ul {
+    color: white;
+    text-decoration: none;
+}
+
+/*** 상단고정 ***/
+/* 고정시키기 */
+.navbar-fixed-top{
+    position: fixed;
+    padding: 5px 30px;
+}
+/* 왼 */
+.prevbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+/* 오 */
+.nextbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+}
+/* 프리미엄&이름 공통적용 */
+.navbar-nav>li {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.navbar-nav>li>a {
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* 프리미엄 */
+.premium{
+    background-color: rgb(211, 42, 0);
+}
+.premium:hover {
+    color: rgb(211, 42, 0);
+}
+/* 내정보 이름 */
+.name {
+    background-color: black;
+}
+.name:hover {
+    color: black;
+}
+
+/*** 왼쪽 고정 메뉴 ***/
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    padding-top: 5px;
+}
+.sidenav li a:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 10px;
+}
+hr {
+    border-top: 1px solid rgb(37, 37, 37);
+}
+
+
+
+/*** 메인 content ***/
+.main_content {
+    padding-top: 80px;
+    padding-left: 50px;
+}
+/* 가입 폼 */
+.form-group {
+    padding-top: 50px;
+}
+.form-control {
+    height: 50px;
+}
+
+/* 폼제목 */ 
+h1 {
+    font-size: 35px;
+    color: white;
+    padding-bottom: 20px;
+}
+/* 라벨 제목 */
+label {
+    font-size: 20px;
+    color: gray;
+}
+
+
+/* 버튼 */
+.cancelbtn {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.btn {
+    margin-right: 10px;
+}

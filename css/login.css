@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body, html {
+    background-color: rgb(37, 37, 37);
+}
+
+/** 공통으로 주는 태그 **/
+h2, a, ul {
+    color: white;
+    text-decoration: none;
+}
+
+/*** 상단고정 ***/
+/* 고정시키기 */
+.navbar-fixed-top{
+    position: fixed;
+    padding: 5px 30px;
+}
+/* 왼 */
+.prevbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+/* 오 */
+.nextbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+}
+/* 프리미엄&이름 공통적용 */
+.navbar-nav>li {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.navbar-nav>li>a {
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* 프리미엄 */
+.premium{
+    background-color: rgb(211, 42, 0);
+}
+.premium:hover {
+    color: rgb(211, 42, 0);
+}
+/* 내정보 이름 */
+.name {
+    background-color: black;
+}
+.name:hover {
+    color: black;
+}
+
+/*** 왼쪽 고정 메뉴 ***/
+.sidebar{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    padding-top: 5px;
+}
+.sidenav li a:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 10px;
+}
+hr {
+    border-top: 1px solid rgb(37, 37, 37);
+}
+
+
+/*** 메인 content ***/
+.main_content {
+    padding-top: 150px;
+}
+.login_content {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 400px;
+    margin: auto;
+}
+.login_content img {
+    padding-bottom: 5px;
+    margin: 5px;
+
+}
+
+/* 로그인 타이틀  */
+.logtitle {
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 로그인 인풋 */
+.input-group {
+    padding-bottom: 10px;
+}
+.glyphicon {
+    top: 0;
+}
+.form-control {
+    height: 50px;
+}
+
+/* 로그인 버튼 */
+button {
+    color: black;
+    margin-top: 30px;
+    height: 40px;
+}
+
+/* 계정이 없나요? */ 
+.log_join {
+    margin-top: 70px;
+    font-size: 15px;
+    color: gray;
+}
+
+/* 가입하기 */
+.signin {
+    padding-left: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
