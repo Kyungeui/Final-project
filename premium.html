@@ -16,13 +16,13 @@
     <!-- style.css & reset.css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/premium.css" />
     <!-- 파비콘  -->
     <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
     <title>Spotify</title>
   </head>
   <body>
-
     <!-- 메뉴바의 색상 테마 지정 -->
     <div class="navbar navbar-fixed-top">
       <!-- 메뉴의 영역 -->
@@ -41,18 +41,18 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
         <!-- 상단 고정 메뉴바 -->
         <div class="nav-bar-collapse col-md-10 col-md-offset-2">
           <!-- <, > 버튼 -->
-          <div class="navbar-left">
-            <button><img src="icon/left.png" alt="" /></button>
-            <button><img src="icon/right.png" alt="" /></button>
+          <div class="navbar-left nav-button">
+            <button class="btn-shape"><img src="icon/left.png" alt="" /></button>
+            <button class="btn-shape"><img src="icon/right.png" alt="" /></button>
           </div>
           <!-- 프리미엄, 프로필 -->
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="premium.html">PREMIUM</a></li>
-            <li><a href="profile.html">NAME</a></li>
+          <ul class="navbar-right nav-button pre-pro"><!-- nav navbar-nav  -->
+            <li class="premium"><a href="premium.html">PREMIUM</a></li>
+            <li class="profile"><a href="profile.html">NAME</a></li>
+            <div class="clearfix"></div>
           </ul>
         </div>
       </div>
@@ -63,48 +63,50 @@
       <div class="row">
         <div class="col-md-2 sidebar text-primary">
           <ul class="nav nav-sidebar sidenav">
-            <li style="padding-top: 5px">
-              <img
-                src="icon/SpotifyIcon_Green.png"
-                style="width: 25px; margin: 10px"
-                alt=""
-              />SPOTIFY
+            <li style="padding-top: 5px" class="logo clearfix">
+              <img src="icon/SpotifyIcon_Green.png" class="pull-left"style="width: 25px; margin: 10px" alt=""/>
+              <a href="#" class="pull-left">SPOTIFY</a>
             </li>
-            <li><a href="mainpage.html">🏠 홈</a></li>
-            <li><a href="search.html">🔍 검색하기</a></li>
+            <li><a href="mainpage.html" id="navlink">🏠 <span class="white-text">홈</span></a></li>
+            <li><a href="search.html" id="navlink">🔍 <span class="white-text">검색하기</span></a></li>
           </ul>
           <hr />
           <ul class="nav nav-sidebar sidenav">
-            <li><a href="playlist.html">🧺 플레이리스트</a></li>
+            <li><a href="playlist.html" id="navlink">🧺 <span class="white-text">플레이리스트</span></a></li>
           </ul>
           <hr />
           <ul class="nav nav-sidebar sidenav">
-            <li><a href="login.html">🔑 로그인/로그아웃</a></li>
-            <li><a href="signup.html">🎁 회원가입</a></li>
-            <li><a href="profile.html">👤 계정</a></li>
+            <li><a href="login.html" id="navlink">🔑 <span class="white-text">로그인/로그아웃</span></a></li>
+            <li><a href="signup.html" id="navlink">🎁 <span class="white-text">회원가입</span></a></li>
+            <li><a href="profile.html" id="navlink">👤 <span class="white-text">계정</span></a></li>
           </ul>
         </div>
       </div>
     </div>
-
+    
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
         <!-- 본문1 -->
-        <div class="page-header">
+        <div class="page-header page-box">
           <!-- 텍스트 -->
           <div class="page-text">
-            <h2>다양한 해외 히트곡과</h2>
-            <h2>국내 인기 음악을 들어보세요</h2>
-            <h3>매월 최소 10,900원입니다(부가세별도).</h3>
-            <h3>언제든 해지할 수 있습니다.</h3>
+            <div class="page-text-h2">
+              <h2>다양한 해외 히트곡과</h2>
+              <h2>국내 인기 음악을</h2>
+              <h2>들어보세요</h2>
+            </div>
+            <div class="page-text-h3">
+              <h3>매월 최소 <span style="font-weight: 500;">10,900원</span>입니다(부가세별도).</h3>
+              <h3>언제든 해지할 수 있습니다.</h3>
+            </div>
           </div>
 
           <!-- 요금제 이동 버튼 -->
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">요금제 보기</a></p>
+          <p><a class="btn btn-lg btn-charge" href="#" role="button" id="btn-charge">요금제 보기</a></p>
         </div>
 
         <!-- 본문2 -->
-        <div>
+        <div class="choice-charge">
           <div class="title-text">
             <h2>요금제 선택하기</h2>
             <p>고객님에게 알맞은 요금제가 있습니다.</p>
@@ -112,12 +114,12 @@
           <div class="charge">
             <div class="sub-text">
               <h3>개인</h3>
-              <p>매월 10,900원 결제(부가세 별도)</p>
+              <p>매월 <span style="font-weight: 500;">10,900원</span> 결제(부가세 별도)</p>
               <p>계정1개</p>
             </div>
             <hr/>
             <!-- 계정 내용 소개 -->
-            <ul>
+            <ul class="sub-box">
               <li>
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                 <p>광고 없는 음악 감상</p>
@@ -140,7 +142,7 @@
               </li>
             </ul>
             <!-- 버튼 -->
-            <a class="btn btn-default" href="#" role="button">시작하기</a>
+            <a class="btn start-btn" href="#" role="button">시작하기</a>
           </div>
         </div>
     </div>
