@@ -45,10 +45,15 @@
 
         <!-- 상단 고정 메뉴바 -->
         <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+          <!-- 프리미엄, 프로필 -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="premium.html" class="premium">PREMIUM</a></li>
+            <li><a href="profile.html" class="name">💚NAME</a></li>
+          </ul>
           <!-- <, > 버튼 -->
-          <div class="navbar-left nav-button">
-            <button class="btn-shape"><img src="icon/left.png" alt="" /></button>
-            <button class="btn-shape"><img src="icon/right.png" alt="" /></button>
+          <div class="navbar-left">
+            <button class="prevbtn"><img src="icon/left.png" alt="" /></button>
+            <button class="nextbtn"><img src="icon/right.png" alt="" /></button>
           </div>
           <!-- 검색하기 버튼 -->
           <form class="navbar-form navbar-left btn-bar">
@@ -57,12 +62,6 @@
             </div>
             <button type="submit" class="btn btn-submit"><a href="search_artist.html">Submit</a></button>
           </form>
-          <!-- 프리미엄, 프로필 -->
-          <ul class="navbar-right nav-button pre-pro"><!-- nav navbar-nav  -->
-            <li class="premium"><a href="premium.html">PREMIUM</a></li>
-            <li class="profile"><a href="profile.html">NAME</a></li>
-            <div class="clearfix"></div>
-          </ul>
         </div>
       </div>
     </div>
@@ -99,7 +98,7 @@
         <!-- 곡 -->
         <h2 class="page-header">곡</h2>
         <!-- 버튼 -->
-        <button class="pull-right all-btn">모두보기</button>
+        <button class="pull-right all-btn"><a href="search_artist_all.html">모두보기</a></button>
         <!--테이블넣기-->
         <table class="table">
           <thead> 

@@ -12,6 +12,12 @@ body {
     float: none;
     clear: both;
 }
+a {
+    color: white;
+}
+a:hover {
+    color: white;
+}
 
 /* > 상단 고정 */
 .navbar-fixed-top {
@@ -42,6 +48,9 @@ body {
     background-color:rgb(37, 37, 37);
     border-radius: 5px;
 }
+hr {
+    border-top: 1px solid rgb(37, 37, 37);
+}
 
 
 /* 텍스트 칼라 : 화이트 */
@@ -49,8 +58,59 @@ body {
     color: white;
 }
 
+/*** 상단고정 ***/
+/* 고정시키기 */
+.navbar-fixed-top{
+    position: fixed;
+    padding: 5px 30px;
+}
+/* 왼 */
+.prevbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+/* 오 */
+.nextbtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    margin-top: 7px;
+}
+/* 프리미엄&이름 공통적용 */
+.navbar-nav>li {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.navbar-nav>li>a {
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* 프리미엄 */
+.premium{
+    background-color: rgb(211, 42, 0);
+    color: white;
+}
+.premium:hover {
+    color: rgb(211, 42, 0);
+}
+/* 내정보 이름 */
+.name {
+    background-color: black;
+    color: white;
+}
+.name:hover {
+    color: black;
+}
 
-/* 상단 < , > 버튼 */
+
+
+/* 상단 < , > 버튼 
 .nav-button {
     margin-top: 13px;
 }
@@ -60,12 +120,12 @@ body {
     border-radius: 100%;
     border: 0;
     margin-right: 7px;
-}
+}*/
 
 /* 검색하기 */
-.btn-bar {
+/* .btn-bar {
     margin-top: 12px;
-}
+} */
 /* 검색하기 > input */
 .search-type {
     padding: 10px;
@@ -295,6 +355,22 @@ table thead {
     font-size: 30px;
     line-height: 1.5;
     text-align: center;
+}
+
+/* 써치 > 앨범 */
+.placeholder{
+    padding: 30px 20px;
+    text-align: center;
+}
+.placeholder:hover {
+    color: darkgreen;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+}
+.placeholder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 /* 앨범 페이지 > 앨범 섬네일 */
