@@ -13,7 +13,8 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
   />
   <!-- style.css & reset.css -->
-  <link rel="stylesheet" href="css/signin.css" />
+  <link rel="stylesheet" href="css/signup.css" />
+  <link rel="stylesheet" href="css/reset.css" />
   <!-- 파비콘  -->
   <link rel="icon" href="icon/SpotifyIcon_Black.png" />
 
@@ -41,12 +42,11 @@
 
       <!-- 상단 고정 메뉴바 -->
       <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+        <!-- 프리미엄, 프로필 -->
         <ul class="nav navbar-nav navbar-right">
           <li><a href="premium.html" class="premium">PREMIUM</a></li>
           <li><a href="profile.html" class="name">💚NAME</a></li>
         </ul>
-        <button class="prevbtn"><img src="icon/left.png" alt="" /></button>
-        <button class="nextbtn"><img src="icon/right.png" alt="" /></button>
       </div>
     </div>
   </div>
@@ -56,25 +56,22 @@
     <div class="row">
       <div class="col-md-2 sidebar text-primary">
         <ul class="nav nav-sidebar sidenav">
-          <li style="padding-top: 5px">
-            <img
-              src="icon/SpotifyIcon_Green.png"
-              style="width: 25px; margin: 10px"
-              alt=""
-            />SPOTIFY
+          <li style="padding-top: 5px" class="logo clearfix">
+            <img src="icon/SpotifyIcon_Green.png" class="pull-left"style="width: 25px; margin: 10px" alt=""/>
+            <a href="#" class="pull-left">SPOTIFY</a>
           </li>
-          <li><a href="mainpage.html">🏠 홈</a></li>
-          <li><a href="search.html">🔍 검색하기</a></li>
+          <li><a href="mainpage.html" id="navlink">🏠 <span class="white-text">홈</span></a></li>
+          <li><a href="search.html" id="navlink">🔍 <span class="white-text">검색하기</span></a></li>
         </ul>
         <hr />
         <ul class="nav nav-sidebar sidenav">
-          <li><a href="playlist.html">🧺 플레이리스트</a></li>
+          <li><a href="playlist.html" id="navlink">🧺 <span class="white-text">플레이리스트</span></a></li>
         </ul>
         <hr />
         <ul class="nav nav-sidebar sidenav">
-          <li><a href="login.html">🔑 로그인/로그아웃</a></li>
-          <li><a href="signup.html">🎁 회원가입</a></li>
-          <li><a href="profile.html">👤 계정</a></li>
+          <li><a href="login.html" id="navlink">🔑 <span class="white-text">로그인/로그아웃</span></a></li>
+          <li><a href="signup.html" id="navlink">🎁 <span class="white-text">회원가입</span></a></li>
+          <li><a href="profile.html" id="navlink">👤 <span class="white-text">계정</span></a></li>
         </ul>
       </div>
     </div>
@@ -84,7 +81,7 @@
     <div class="main_content col-md-10 col-md-offset-2">
       <div class="sign_content">
         <div class="titlezone">
-          <img src="icon/SpotifyIcon_White.png" alt="" style="width: 40px" />Spotify
+          <img src="icon/SpotifyIcon_White.png" alt="" style="width: 40px" /><span id="spotify">Spotify</span>
           <h2 class="signtitle">무료 Spotify 계정에 가입하세요</h2>
         </div>
         <div class="input-group">
@@ -120,7 +117,7 @@
 
         <!-- 생년월일 -->
         <div class="form-group">
-          <label for="user_birth">생년월일이 언제인가요?</label>
+          <label for="user_birth" class="labels">생년월일이 언제인가요?</label>
           <input
             type="date"
             class="form-control"
@@ -131,22 +128,22 @@
 
         <!-- 성별 라디오 -->
         <div class="form-group">
-          <label for="user_birth">성별이 무엇인가요?</label>
+          <label for="user_birth" class="labels">성별이 무엇인가요?</label>
           <div class="radio">
-            <label>
+            <label class="labels">
               <input type="radio" name="myradio" id="female" value="" checked />
               여성
             </label>
           </div>
           <div class="radio">
-            <label>
+            <label class="labels">
               <input type="radio" name="myradio" id="male" value="" />
               남성
             </label>
           </div>
           <!-- 사용 못하게 막으려면 .disabled -->
           <div class="radio">
-            <label>
+            <label class="labels">
               <!-- 사용 못하게 막으려면 .disabled -->
               <input type="radio" name="myradio" id="non" value="" />
               논바이너리
@@ -156,9 +153,6 @@
         <button type="submit" class="btn btn-success btn-block">
           SPOTIFY에 가입하기
         </button>
-        <div class="back">
-          <a href="#" class="backback">뒤로</a>
-        </div>
         <div class="sign_join">
           <span
             >이미 Spotify 계정이 있다고요?<a href="login.html" class="login"
