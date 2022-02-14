@@ -158,10 +158,15 @@ hr {
 }
 
 /* 폼제목 */ 
-h1 {
-    font-size: 35px;
+.main_content h1 {
+    font-size: 40px;
     color: white;
     padding-bottom: 20px;
+
+}
+.main_content a {
+    padding-bottom: 20px;
+
 }
 /* 라벨 제목 */
 label {
@@ -170,11 +175,12 @@ label {
 }
 
 
-/* 버튼 */
+/* profile_edit.html  (button) */
 .cancelbtn {
     padding-left: 60px;
     padding-top: 40px;
 }
 .btn {
     margin-right: 10px;
+    font-size: 15px;
 }
