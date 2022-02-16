@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap 추가 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <!-- style.css & reset.css -->
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 파비콘  -->
+    <link rel="icon" href="icon/SpotifyIcon_Black.png" />
+
+    <title>Spotify</title>
+  </head>
+  <body>
+    <!-- 메뉴바의 색상 테마 지정 -->
+    <div class="navbar navbar-fixed-top">
+      <!-- 메뉴의 영역 -->
+      <div class="container-fluid">
+        <!-- 로고 -->
+        <div class="navbar-header">
+          <!-- 모바일 해상도에서만 표시되는 햄버거 버튼 -->
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- 상단 고정 메뉴바 -->
+        <div class="nav-bar-collapse col-md-10 col-md-offset-2">
+          <!-- 프리미엄, 프로필 -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="premium.html" class="premium">PREMIUM</a></li>
+            <li><a href="profile.html" class="name">💚NAME</a></li>
+          </ul>
+          <!-- 검색하기 버튼 -->
+          <form class="navbar-form navbar-left btn-bar">
+            <div class="form-group">
+              <input type="text" class="search-type" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-submit"><a href="search_artist.html">Submit</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--왼쪽 고정 메뉴바 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 sidebar text-primary">
+          <ul class="nav nav-sidebar sidenav">
+            <li style="padding-top: 5px" class="logo clearfix">
+              <img src="icon/SpotifyIcon_Green.png" class="pull-left"style="width: 25px; margin: 10px" alt=""/>
+              <a href="#" class="pull-left">SPOTIFY</a>
+            </li>
+            <li><a href="mainpage.html" id="navlink">🏠 <span class="white-text">홈</span></a></li>
+            <li><a href="search.html" id="navlink">🔍 <span class="white-text">검색하기</span></a></li>
+          </ul>
+          <hr />
+          <ul class="nav nav-sidebar sidenav">
+            <li><a href="playlist.html" id="navlink">🧺 <span class="white-text">플레이리스트</span></a></li>
+          </ul>
+          <hr />
+          <ul class="nav nav-sidebar sidenav">
+            <li><a href="login.html" id="navlink">🔑 <span class="white-text">로그인/로그아웃</span></a></li>
+            <li><a href="signup.html" id="navlink">🎁 <span class="white-text">회원가입</span></a></li>
+            <li><a href="profile.html" id="navlink">👤 <span class="white-text">계정</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
