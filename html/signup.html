@@ -78,90 +78,90 @@
   </div>
   
     <!-- 메인페이지 content -->
-    <div class="main_content col-md-10 col-md-offset-2" id="join_form">
+    <div class="main_content col-md-10 col-md-offset-2">
       <div class="sign_content">
         <div class="titlezone">
           <img src="icon/SpotifyIcon_White.png" alt="" style="width: 40px" /><span id="spotify">Spotify</span>
           <h2 class="signtitle">무료 Spotify 계정에 가입하세요</h2>
         </div>
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-envelope"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_id"
-            name="user_id"
-            placeholder="이메일"
-          />
-        </div>
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-lock"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_pw"
-            name="user_pw"
-            placeholder="비밀번호 만들기"
-          />
-        </div>
-        <div class="input-group">
-          <div class="input-group-addon glyphicon glyphicon-user"></div>
-          <input
-            type="text"
-            class="form-control"
-            id="user_name"
-            name="user_name"
-            placeholder="사용자 이름"
-          />
-        </div>
-
-        <!-- 생년월일 -->
-        <div class="form-group">
-          <label for="user_birth" class="labels">생년월일이 언제인가요?</label>
-          <input
-            type="date"
-            class="form-control"
-            id="user_birth"
-            name="user_birth"
-          />
-        </div>
-
+        <form name="join_form" id="join_form">
+          <div class="input-group">
+            <div class="input-group-addon glyphicon glyphicon-envelope"></div>
+            <input
+              type="text"
+              class="form-control"
+              id="user_id"
+              name="user_id"
+              placeholder="이메일"
+            />
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon glyphicon glyphicon-lock"></div>
+            <input
+              type="text"
+              class="form-control"
+              id="user_pw"
+              name="user_pw"
+              placeholder="비밀번호 만들기"
+            />
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon glyphicon glyphicon-user"></div>
+            <input
+              type="text"
+              class="form-control"
+              id="user_name"
+              name="user_name"
+              placeholder="사용자 이름"
+            />
+          </div>
+  
+          <!-- 생년월일 -->
+          <div class="form-group">
+            <label for="user_birth" class="labels">생년월일이 언제인가요?</label>
+            <input
+              type="date"
+              class="form-control"
+              id="user_birth"
+              name="user_birth"
+            />
+          </div>
+          <!-- 성별 라디오 -->
+          <div class="form-group">
+            <label for="user_birth" class="labels">성별이 무엇인가요?</label>
+            <div class="radio">
+              <label class="labels">
+                <input type="radio" name="myradio" id="female" value="" checked />
+                여성
+              </label>
+            </div>
+            <div class="radio">
+              <label class="labels">
+                <input type="radio" name="myradio" id="male" value="" />
+                남성
+              </label>
+            </div>
+            <!-- 사용 못하게 막으려면 .disabled -->
+            <div class="radio">
+              <label class="labels">
+                <!-- 사용 못하게 막으려면 .disabled -->
+                <input type="radio" name="myradio" id="non" value="" />
+                논바이너리
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">
+            SPOTIFY에 가입하기
+          </button>
+          <div class="sign_join" id="join_form">
+            <span
+              >이미 Spotify 계정이 있다고요?<a href="login.html" class="login"
+                >로그인하기</a
+              ></span
+            >
+          </div>
+        </form>
         
-
-        <!-- 성별 라디오 -->
-        <div class="form-group">
-          <label for="user_birth" class="labels">성별이 무엇인가요?</label>
-          <div class="radio">
-            <label class="labels">
-              <input type="radio" name="myradio" id="female" value="" checked />
-              여성
-            </label>
-          </div>
-          <div class="radio">
-            <label class="labels">
-              <input type="radio" name="myradio" id="male" value="" />
-              남성
-            </label>
-          </div>
-          <!-- 사용 못하게 막으려면 .disabled -->
-          <div class="radio">
-            <label class="labels">
-              <!-- 사용 못하게 막으려면 .disabled -->
-              <input type="radio" name="myradio" id="non" value="" />
-              논바이너리
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-success btn-block">
-          SPOTIFY에 가입하기
-        </button>
-        <div class="sign_join">
-          <span
-            >이미 Spotify 계정이 있다고요?<a href="login.html" class="login"
-              >로그인하기</a
-            ></span
-          >
-        </div>
       </div>
     </div>
 
