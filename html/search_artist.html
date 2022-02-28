@@ -14,7 +14,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
     />
     <!-- style.css & reset.css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/search.css" />
     <!-- 파비콘  -->
@@ -49,15 +49,23 @@
             <li><a href="premium.html" class="premium">PREMIUM</a></li>
             <li><a href="profile.html" class="name">💚NAME</a></li>
           </ul>
+          <!-- <, > 버튼 -->
+          <div class="navbar-left nav-button">
+            <button class="btn-shape"><img src="icon/left.png" alt="" /></button>
+            <button class="btn-shape"><img src="icon/right.png" alt="" /></button>
+          </div>
           <!-- 검색하기 버튼 -->
           <form class="navbar-form navbar-left btn-bar">
             <div class="form-group">
-              <input type="text" class="search-type" placeholder="Search" />
+              <input id="query" type="text" class="search-type" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-submit">
-              <a href="search_artist.html">Submit</a>
-            </button>
+            <button type="submit" id="searchBtn" class="btn btn-submit"><a href="#">Submit</a></button>
           </form>
+
+          <!-- 히든토큰 (value값에 저장해두는 것) -->
+          <!-- 쉽게 꺼내 쓰기 위해서(Html에 보일 필요 없음) -->
+          <!-- 쉽게 말하면, 자바스크립트에서 쉽게 꺼내 쓰려고 변수를 생성한 것 -->
+         <input id="hidden_token" type="hidden"></input>
         </div>
       </div>
     </div>
@@ -120,28 +128,22 @@
     <!-- 메인페이지 content -->
     <div class="main_content col-md-10 col-md-offset-2">
       <!-- 검색 결과 -->
-      <h2 class="page-header">상위 결과</h2>
+      <div class="block">
+        <h2 class="page-header block common">상위 결과</h2>
+      </div>
       <!-- 아티스트 이미지 -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4 artist-img">
-          <a href="#" id="thumbnail">
-            <img src="./img/cl_profile.png" alt="..." />
-            <div class="caption">
-              <h3>CL</h3>
-              <p>아티스트</p>
-            </div>
-          </a>
-        </div>
+      <div class="row" id="artistRes">
+        <!-- createArtist -->
       </div>
 
       <!-- 곡 -->
-      <h2 class="page-header">곡</h2>
+      <h2 class="page-header block common">곡</h2>
       <!-- 버튼 -->
-      <button class="pull-right all-btn">
-        <a href="search_song.html">모두보기</a>
+      <button class="pull-right all-btn block common">
+        <a href="#" id="allsong">모두보기</a>
       </button>
       <!--테이블넣기-->
-      <table class="table">
+      <table class="table block common">
         <thead>
           <tr>
             <th id="th">#</th>
@@ -149,586 +151,23 @@
             <th id="th">앨범</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td id="td">1</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true" id="close">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" id="playbtn" class="btn">
-                        플레이리스트1
-                      </button>
-                      <button type="button" id="playbtn" class="btn">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr id="tr">
-            <td id="td">2</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">3</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">4</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">5</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">6</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">7</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">8</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">9</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td id="td">10</td>
-            <td id="td">You Right</td>
-            <td id="td">STAY</td>
-            <td id="td" class="clearfix">
-              <!-- 플레이리스트에 추가 -->
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-sm pull-right add-btn"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                추가
-              </button>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="myModal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="myModalLabel"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="myModalLabel">
-                        플레이리스트에 추가
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트1
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        플레이리스트2
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
+        <tbody id="trackRes">
+         <!-- createTrack -->
         </tbody>
       </table>
 
       <!-- 앨범 -->
-      <h1 class="page-header">앨범</h1>
+      <h1 class="page-header block common">앨범</h1>
       <!--프로필-->
-      <div class="row placeholders">
-        <a href="main_artist.html">
-          <div class="col-md-3 placeholder">
-            <img
-              src="img/dhruv.jpeg"
-              class="img-responsive"
-              alt="harry placeholder thumbnail"
-            />
-            <h4>dhruv</h4>
-            <span class="text-muted">아티스트</span>
-          </div>
-        </a>
-
-        <a href="main_artist.html">
-          <div class="col-md-3 placeholder">
-            <img
-              src="img/sza.jpeg"
-              class="img-responsive"
-              alt="dobby placeholder thumbnail"
-            />
-            <h4>SZA</h4>
-            <span class="text-muted">아티스트</span>
-          </div>
-        </a>
-
-        <a href="main_artist.html">
-          <div class="col-md-3 placeholder">
-            <img
-              src="img/cl_profile.png"
-              class="img-responsive"
-              alt="harry placeholder thumbnail"
-            />
-            <h4>CL</h4>
-            <span class="text-muted">아티스트</span>
-          </div>
-        </a>
-
-        <a href="main_artist.html">
-          <div class="col-md-3 placeholder">
-            <img
-              src="img/Jenevieve.jpeg"
-              class="img-responsive"
-              alt="dobby placeholder thumbnail"
-            />
-            <h4>Jenevieve</h4>
-            <span class="text-muted">아티스트</span>
-          </div>
-        </a>
+      <div class="row placeholders" id="albumRes">
+        <!-- createAlbum -->
       </div>
     </div>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
